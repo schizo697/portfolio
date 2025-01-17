@@ -1,1 +1,269 @@
-# portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elmer Varquez</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+</head>
+<body class="bg-gray-100">
+    <header id="main-header" class="fixed top-2 left-1/2 transform -translate-x-1/2 bg-transparent shadow-md inline-flex items-center py-2 px-4 z-50 rounded-xl hover:bg-gray-600">
+        <nav class="space-x-6 text-lg flex justify-center">
+            <a href="#home" class="hover:text-blue-500 scroll-link"><i class="fas fa-home"></i></a>
+            <a href="#career" class="hover:text-blue-500 scroll-link"><i class="fas fa-user-tie"></i></a>
+            <a href="#projects" class="hover:text-blue-500 scroll-link"><i class="fas fa-briefcase"></i></a>
+            <a href="#education" class="hover:text-blue-500 scroll-link"><i class="fas fa-book"></i></a>
+            <a href="#contact" class="hover:text-blue-500 scroll-link"><i class="fas fa-phone"></i></a>
+        </nav>
+    </header>
+
+
+    <!-- modal -->
+    <div id="zoomModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
+        <img src="" id="zoomedImg" class="rounded-lg shadow-none max-w-full max-h-full">
+    </div>
+    <main class="pt-20 p-8 mx-auto max-w-3xl">
+        <section id="home" class="bg-blue-100 flex items-center justify-center">
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center w-full max-w-full md:max-w-3xl lg:max-w-4xl flex flex-col md:flex-row items-center justify-between">
+                <div class="text-center md:text-left md:w-1/2">
+                    <h1 class="text-3xl font-bold">Elmer L. Varquez Jr.</h1>
+                    <p class="mt-4 text-l">A passionate web developer dedicated to crafting beautiful and functional web applications.</p>
+                </div>
+                
+                <div class="mt-8 md:mt-0 md:w-1/2 flex justify-center">
+                    <img src="images/profile.jpg" alt="Profile Picture" class="rounded-full shadow-lg max-w-[150px] max-h-[150px]">
+                </div>
+            </div>
+        </section>
+        <section id="aboutme" class="bg-green-100 flex items-center justify-center w-full">
+            <div class="bg-white p-8shadow-lg w-full max-w-3xl">
+                <h2 class="text-2xl font-bold text-center">About Me</h2>
+                <p class="mt-4 text-l text-center">
+                    Hi! I'm Elmer Varquez, a web developer with a passion for creating engaging and user-friendly websites.
+                    I specialize in building dynamic applications using technologies like PHP, MySQL, JavaScript, and Laravel.
+                    I enjoy solving problems and bringing ideas to life through clean and efficient code.
+                    When I'm not coding, you can find me exploring new technologies, working on creative projects, or enjoying time with family and friends.
+                </p>
+            </div>
+        </section>
+        <section id="career" class="bg-green-100 flex items-center justify-center w-full">
+            <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl">
+                <h2 class="text-2xl font-bold text-center">Career</h2>
+                <br>
+                <h4 class="text-1xl font-bold text-left text-gray-800 font-poppins">Freelance Web Developer</h4>
+                <div class="mt-4 text-left">
+                    <p class="text-l font-semibold">Description</p>
+                    <p class="mt-2 text-sm text-gray-600">
+                        As a freelance web developer, I have had the opportunity to work on various dynamic projects for clients, delivering custom web solutions, improving user experience, and implementing efficient back-end systems. I specialize in PHP, MySQL, JavaScript, and Laravel to develop feature-rich websites.
+                    </p>
+                </div>
+                <p class="mt-4 text-l font-semibold text-gray-800">
+                    Technologies
+                </p>
+                <div class="flex flex-wrap space-x-4 mt-2">
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-php text-yellow-600 mr-1"></i>PHP
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-laravel text-red-600 mr-1"></i>Laravel
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-js-square text-yellow-500 mr-1"></i>JavaScript
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-html5 text-orange-500 mr-1"></i>HTML
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-bootstrap text-primary mr-1"></i>BootStrap
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-css3-alt text-blue-600 mr-1"></i>CSS
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-database text-blue-500 mr-1"></i>MySQL
+                    </span>
+                </div>
+                <br>
+                <h4 class="text-1xl font-bold text-left text-gray-800 font-poppins">On-Call Computer Technician</h4>
+                <div class="mt-4 text-left">
+                    <p class="text-l font-semibold">Description</p>
+                    <p class="mt-2 text-sm text-gray-600">
+                        In my role as an On-Call Computer Technician, I have provided comprehensive technical support, including troubleshooting, system diagnostics, network issue resolution, hardware and software repairs, and system maintenance. I ensure that both individual users and businesses experience minimal downtime and efficient system performance.
+                    </p>
+                </div>
+                <p class="mt-4 text-l font-semibold text-gray-800">
+                    Skills:
+                </p>
+                <div class="flex flex-wrap space-x-4 mt-2">
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fas fa-tools text-gray-600 mr-1"></i>Technical Support
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fas fa-network-wired text-gray-600 mr-1"></i>Network Diagnostics
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fas fa-laptop-code text-gray-600 mr-1"></i>Hardware & Software Troubleshooting
+                    </span>
+                </div>
+                <br>
+            </div>
+        </section>        
+        <section id="projects" class="bg-green-100 flex items-center justify-center w-full">
+            <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl">
+                <h2 class="text-2xl font-bold text-center">Work Projects</h2>
+                <br>
+                <h4 class="text-1xl font-bold text-left text-gray-800 font-poppins">Anvy Resort Hotel</h4>
+                <br>
+                <div class="flex justify-center items-center">
+                    <img src="images/anvys.png" alt="Image" class="rounded-lg shadow-none cursor-pointer project-img">
+                </div>
+                <div class="mt-4 text-left">
+                    <p class="text-l font-semibold">Description</p>
+                    <p class="mt-2 text-sm text-gray-600">
+                        Developed a website for The Anvy Beach Resort, featuring a gallery and an easy-to-use booking system, offering a seamless user experience for visitors.
+                    </p>
+                </div>
+                <p class="mt-4 text-l font-semibold text-gray-800">
+                    Technologies
+                </p>
+                <div class="flex flex-wrap space-x-4 mt-2">
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-php text-yellow-600 mr-1"></i>PHP
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-laravel text-red-600 mr-1"></i>Laravel
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-js-square text-yellow-500 mr-1"></i>JavaScript
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-html5 text-orange-500 mr-1"></i>HTML
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-bootstrap text-primary mr-1"></i>BootStrap
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-css3-alt text-blue-600 mr-1"></i>CSS
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-database text-blue-500 mr-1"></i>MySQL
+                    </span>
+                </div>
+                <br>
+                <br>
+                <h4 class="text-1xl font-bold text-left text-gray-800 font-poppins">MPM Furniture</h4>
+                <br>
+                <div class="flex justify-center items-center">
+                    <img src="images/furniture11.png" alt="Image" class="rounded-lg shadow-none cursor-pointer project-img">
+                </div>
+                <div class="mt-4 text-left">
+                    <p class="text-l font-semibold">Description</p>
+                    <p class="mt-2 text-sm text-gray-600">
+                        Created a website for MPM Furniture, allowing customers to easily order and customize furniture, enhancing their online shopping experience.
+                    </p>
+                </div>
+                <p class="mt-4 text-l font-semibold text-gray-800">
+                    Technologies
+                </p>
+                <div class="flex flex-wrap space-x-4 mt-2">
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-php text-yellow-600 mr-1"></i>PHP
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-js-square text-yellow-500 mr-1"></i>JavaScript
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-html5 text-orange-500 mr-1"></i>HTML
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-bootstrap text-primary mr-1"></i>BootStrap
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-css3-alt text-blue-600 mr-1"></i>CSS
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-database text-blue-500 mr-1"></i>MySQL
+                    </span>
+                </div>
+                <br>
+                <br>
+                <h4 class="text-1xl font-bold text-left text-gray-800 font-poppins">Tboli - Learning Management System</h4>
+                <br>
+                <div class="flex justify-center items-center">
+                    <img src="images/tboli.png" alt="Image" class="rounded-lg shadow-none cursor-pointer project-img">
+                </div>
+                <div class="mt-4 text-left">
+                    <p class="text-l font-semibold">Description</p>
+                    <p class="mt-2 text-sm text-gray-600">
+                        Developed a Learning Management System for the Tboli tribe, enabling teachers to upload topics and quizzes, providing an interactive platform for students to engage with educational content.
+                    </p>
+                </div>
+                <p class="mt-4 text-l font-semibold text-gray-800">
+                    Technologies:
+                </p>
+                <div class="flex flex-wrap space-x-4 mt-2">
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-php text-yellow-600 mr-1"></i>PHP
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-js-square text-yellow-500 mr-1"></i>JavaScript
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-html5 text-orange-500 mr-1"></i>HTML
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-bootstrap text-primary mr-1"></i>BootStrap
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-css3-alt text-blue-600 mr-1"></i>CSS
+                    </span>
+                    <span class="mr-2 text-sm flex items-center">
+                        <i class="fab fa-database text-blue-500 mr-1"></i>MySQL
+                    </span>
+                </div>
+                <br>
+                <h2 id="education" class="text-2xl font-bold text-center">Education and Certificates</h2>
+                <div class="mt-4 text-left">
+                    <p class="text-l font-semibold">STI College - General Santos City</p>
+                    <p class="text-sm text-gray-600">Bachelor of Science in Information Technology</p>
+                    <p class="text-sm text-gray-600">2020 - 2024</p>
+                </div>
+                <div class="mt-4 text-left">
+                    <p class="text-l font-semibold">Computer Systems Servicing NCII</p>
+                    <p class="text-sm text-gray-600">Stratford International School</p>
+                    <p class="text-sm text-gray-600">2020 - Present</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact" class="bg-gray-800 text-white py-6 mt-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+            <p class="text-lg">Let's work together to create something amazing. Feel free to reach out to me.</p>
+            <div class="mt-4 text-center">
+                <a href="mailto:varquez.elmerjr@gmail.com" class="hover:text-blue-500"><i class="fas fa-envelope"></i> varquez.elmerjr@gmail.com</a>
+            </div>
+            <div class="mt 4flex justify-center space-x-6">
+                <a href="https://ph.jobstreet.com/profile/elmer-varquez-GsN1gFBW8B" target="_blank" class="text-sm hover:text-blue-500">
+                    <i class="fas fa-briefcase"></i>JobStreet
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="text-sm hover:text-blue-500">
+                    <i class="fab fa-linkedin"></i>LinkedIn
+                </a>
+                <a href="http://discordapp.com/users/abys697" target="_blank" class="text-sm hover:text-blue-500">
+                    <i class="fab fa-discord"></i>Discord
+                </a>
+                <a href="https://github.com/schizo697" target="_blank" class="text-sm hover:text-blue-500">
+                    <i class="fab fa-github"></i>Github
+                </a>
+            </div>
+            <p class="mt-4">&copy; 2025 Elmer L. Varquez Jr. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
