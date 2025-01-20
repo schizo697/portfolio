@@ -10,17 +10,18 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     
 </head>
-<body class="bg-gray-100">
-    <header id="main-header" class="fixed bottom-3 left-1/2 transform -translate-x-1/2 bg-transparent shadow-md inline-flex items-center py-2 px-4 z-50 rounded-xl hover:bg-gray-600">
-        <nav class="space-x-6 text-lg flex justify-center">
-            <a href="#home" class="hover:text-blue-500 scroll-link"><i class="fas fa-home"></i></a>
-            <a href="#career" class="hover:text-blue-500 scroll-link"><i class="fas fa-user-tie"></i></a>
-            <a href="#projects" class="hover:text-blue-500 scroll-link"><i class="fas fa-briefcase"></i></a>
-            <a href="#education" class="hover:text-blue-500 scroll-link"><i class="fas fa-book"></i></a>
-            <a href="#contact" class="hover:text-blue-500 scroll-link"><i class="fas fa-phone"></i></a>
+<body class="bg-gray-300">
+    <header id="main-header" class="w-full bg-gray-800 text-white shadow-md py-4 px-6 justify-items-center">
+        <nav class="flex items-center justify-between">
+            <!-- Navigation Links -->
+            <div class="space-x-6 text-lg flex justify-center">
+                <a href="#home" class="hover:text-blue-500 scroll-link"><i class="fas fa-home"></i> Home</a>
+                <a href="#career" class="hover:text-blue-500 scroll-link"><i class="fas fa-user-tie"></i> Career</a>
+                <a href="#projects" class="hover:text-blue-500 scroll-link"><i class="fas fa-briefcase"></i> Projects</a>
+                <a href="#education" class="hover:text-blue-500 scroll-link"><i class="fas fa-book"></i> Education</a>
+            </div>
         </nav>
     </header>
-
 
     <!-- modal -->
     <div id="zoomModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
@@ -28,7 +29,7 @@
     </div>
     <main class="pt-20 p-8 mx-auto max-w-3xl">
         <section id="home" class="bg-blue-100 flex items-center justify-center">
-            <div class="bg-white p-8 rounded-lg shadow-lg text-center w-full max-w-full md:max-w-3xl lg:max-w-4xl flex flex-col md:flex-row items-center justify-between">
+            <div class="bg-white p-8 shadow-lg text-center w-full max-w-full md:max-w-3xl lg:max-w-4xl flex flex-col md:flex-row items-center justify-between">
                 <div class="text-center md:text-left md:w-1/2">
                     <h1 class="text-3xl font-bold">Elmer L. Varquez Jr.</h1>
                     <p class="mt-4 text-l">A passionate web developer dedicated to crafting beautiful and functional web applications.</p>
@@ -51,7 +52,7 @@
             </div>
         </section>
         <section id="career" class="bg-green-100 flex items-center justify-center w-full">
-            <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl">
+            <div class="bg-white p-8 shadow-lg w-full max-w-3xl">
                 <h2 class="text-2xl font-bold text-center">Career</h2>
                 <br>
                 <h4 class="text-1xl font-bold text-left text-gray-800 font-poppins">Freelance Web Developer</h4>
@@ -113,7 +114,7 @@
             </div>
         </section>        
         <section id="projects" class="bg-green-100 flex items-center justify-center w-full">
-            <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl">
+            <div class="bg-white p-8 shadow-lg w-full max-w-3xl">
                 <h2 class="text-2xl font-bold text-center">Work Projects</h2>
                 <br>
                 <h4 class="text-1xl font-bold text-left text-gray-800 font-poppins">Anvy Resort Hotel</h4>
@@ -240,6 +241,9 @@
             </div>
         </section>
     </main>
+    <a href="#main-header" class=" scroll-link fixed bottom-6 right-6 bg-blue-500 text-white rounded-full p-4 shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+        <i class="fas fa-arrow-up"></i>
+    </a>
     <footer id="contact" class="bg-gray-800 text-white py-6 mt-8">
         <div class="container mx-auto text-center">
             <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
@@ -247,18 +251,24 @@
             <div class="mt-4 text-center">
                 <a href="mailto:varquez.elmerjr@gmail.com" class="hover:text-blue-500"><i class="fas fa-envelope"></i> varquez.elmerjr@gmail.com</a>
             </div>
-            <div class="mt 4flex justify-center space-x-6">
+            <div class="text-center hover:text-blue-500">
+                <i class="fas fa-phone"></i> (+63) 9692681192
+            </div>
+            <div class="mt-4 flex justify-center space-x-6">
                 <a href="https://ph.jobstreet.com/profile/elmer-varquez-GsN1gFBW8B" target="_blank" class="text-sm hover:text-blue-500">
-                    <i class="fas fa-briefcase"></i>JobStreet
+                    <i class="fas fa-briefcase"></i> JobStreet
                 </a>
                 <a href="https://www.linkedin.com" target="_blank" class="text-sm hover:text-blue-500">
-                    <i class="fab fa-linkedin"></i>LinkedIn
+                    <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
                 <a href="http://discordapp.com/users/abys697" target="_blank" class="text-sm hover:text-blue-500">
-                    <i class="fab fa-discord"></i>Discord
+                    <i class="fab fa-discord"></i> Discord
                 </a>
                 <a href="https://github.com/schizo697" target="_blank" class="text-sm hover:text-blue-500">
-                    <i class="fab fa-github"></i>Github
+                    <i class="fab fa-github"></i> Github
+                </a>
+                <a href="https://www.instagram.com/elmr.vrqz/" target="_blank" class="text-sm hover:text-blue-500">
+                    <i class="fab fa-instagram"></i> Instagram
                 </a>
             </div>
             <p class="mt-4">&copy; 2025 Elmer L. Varquez Jr. All rights reserved.</p>
