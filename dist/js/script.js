@@ -53,4 +53,16 @@ document.querySelectorAll('.scroll-link i').forEach(icon => {
         icon.style.transform = 'scale(1)';
     });
 });
+
 //hide header
+const header = document.getElementById('main-header');
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 50) {
+            
+        header.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+    } else {
+            
+        header.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+    }
+});

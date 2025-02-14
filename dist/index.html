@@ -11,7 +11,7 @@
     
 </head>
 <body class="bg-gray-300">
-    <header id="main-header" class="w-[705px] bg-white text-black shadow-md py-4 px-6 flex items-center justify-center fixed top-0 left-1/2 transform -translate-x-1/2 z-50 rounded-full">
+    <header id="main-header" class="w-full max-w-3xl bg-white text-black shadow-md py-4 px-6 flex items-center justify-center fixed top-0 left-1/2 transform -translate-x-1/2 z-50 rounded-full transition-all">
         <nav class="space-x-6 text-lg flex items-center justify-center">
             <!-- Navigation Links -->
             <a href="#main-header" class="hover:text-blue-500 scroll-link"><i class="fas fa-home"></i> Home</a>
@@ -20,15 +20,13 @@
             <a href="#education" class="hover:text-blue-500 scroll-link"><i class="fas fa-book"></i> Education</a>
         </nav>
     </header>
-    
-
     <!-- modal -->
     <div id="zoomModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
         <img src="" id="zoomedImg" class="rounded-lg shadow-none max-w-full max-h-full">
     </div>
-    <main class="pt-16 p-8 mx-auto max-w-3xl">
+    <main class="pt-16 p-8 mx-auto max-w-4xl">
         <section id="home" class="bg-blue-100 flex items-center justify-center">
-            <div class="bg-white p-8 shadow-lg text-center w-full max-w-full md:max-w-3xl lg:max-w-4xl flex flex-col md:flex-row items-center justify-between">
+            <div class="bg-white p-8 shadow-lg text-center w-full max-w-full md:max-w-4xl lg:max-w-4xl flex flex-col md:flex-row items-center justify-between">
                 <div class="text-center md:text-left md:w-1/2">
                     <h1 class="text-3xl font-bold">Elmer L. Varquez Jr.</h1>
                     <p class="mt-4 text-l">A passionate web developer from the Philippines.</p>
@@ -40,7 +38,7 @@
             </div>
         </section>
         <section id="aboutme" class="bg-green-100 flex items-center justify-center w-full">
-            <div class="bg-white p-8shadow-lg w-full max-w-3xl">
+            <div class="bg-white p-8shadow-lg w-full">
                 <h2 class="text-2xl font-bold text-center">About Me</h2>
                 <p class="mt-4 text-l text-center">
                     Hi! I'm Elmer Varquez, a web developer with a passion for creating engaging and user-friendly websites.
@@ -51,7 +49,7 @@
             </div>
         </section>
         <section id="career" class="bg-green-100 flex items-center justify-center w-full">
-            <div class="bg-white p-8 shadow-lg w-full max-w-3xl">
+            <div class="bg-white p-8 shadow-lg w-full">
                 <h2 class="text-2xl font-bold text-center">Career</h2>
                 <br>
                 <h4 class="text-1xl font-bold text-left text-gray-800 font-poppins">Freelance Web Developer</h4>
@@ -113,7 +111,7 @@
             </div>
         </section>        
         <section id="projects" class="bg-green-100 flex items-center justify-center w-full">
-            <div class="bg-white p-8 shadow-lg w-full max-w-3xl">
+            <div class="bg-white p-8 shadow-lg w-full">
                 <h2 class="text-2xl font-bold text-center">Work Projects</h2>
                 <br>
                 <h4 class="text-1xl font-bold text-left text-gray-800 font-poppins">Anvy Resort Hotel</h4>
@@ -264,16 +262,34 @@
                 </div>
                 <br>
                 <h2 id="education" class="text-2xl font-bold text-center">Education and Certificates</h2>
-                <div class="mt-4 text-left">
-                    <p class="text-l font-semibold">STI College - General Santos City</p>
-                    <p class="text-sm text-gray-600">Bachelor of Science in Information Technology</p>
-                    <p class="text-sm text-gray-600">2020 - 2024</p>
-                </div>
-                <div class="mt-4 text-left">
-                    <p class="text-l font-semibold">Computer Systems Servicing NCII</p>
-                    <p class="text-sm text-gray-600">Stratford International School</p>
-                    <p class="text-sm text-gray-600">2020 - Present</p>
-                </div>
+                <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <div class="text-left md:col-start-1">
+                        <p class="text-lg font-semibold">STI College - General Santos City</p>
+                        <p class="text-sm text-gray-600">Bachelor of Science in Information Technology</p>
+                        <p class="text-sm text-gray-600">2020 - 2024</p>
+                    </div>
+                    <div class="text-left md:col-start-1">
+                        <p class="text-lg font-semibold">Stratford International School</p>
+                        <p class="text-sm text-gray-600">Senior High School</p>
+                        <p class="text-sm text-gray-600">Technical Vocation Livelihood</p>
+                        <p class="text-sm text-gray-600">2018 - 2020</p>
+                    </div>
+                    <div class="text-left md:col-start-1">
+                        <p class="text-lg font-semibold">Bula National School of Fisheries</p>
+                        <p class="text-sm text-gray-600">Junior High School</p>
+                        <p class="text-sm text-gray-600">2014 - 2018</p>
+                    </div>
+                    <div class="text-left md:col-start-1">
+                        <p class="text-lg font-semibold">Jose Divinia Gracia Sr. Elementary School</p>
+                        <p class="text-sm text-gray-600">Elementary</p>
+                        <p class="text-sm text-gray-600">2009 - 2014</p>
+                    </div>
+                    <div class="text-left md:col-start-2 md:row-start-1">
+                        <p class="text-lg font-semibold">Computer Systems Servicing NCII</p>
+                        <p class="text-sm text-gray-600">Stratford International School</p>
+                        <p class="text-sm text-gray-600">2020 - Present</p>
+                    </div>
+                </div>         
             </div>
         </section>
     </main>
